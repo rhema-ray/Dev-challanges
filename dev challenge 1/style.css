@@ -8,10 +8,9 @@
 
 body{
     font-size: 10px;
-    /* overflow-x: hidden; */
 }
 
-h1,h2,h3{
+h1,h2,h3,footer,a{
     font-family: mada;
     font-weight: 500;
     text-align: center;
@@ -52,7 +51,9 @@ h3{
 /* header */
 
 header{
-    margin-top: 10px;
+    margin: 10px auto 0;
+    width: fit-content;
+
 }
 
 .profile{
@@ -60,7 +61,7 @@ header{
 }
 
 header .profile img{
-    height: 156px;
+    height: 10.1em;
     width: auto;
     margin-bottom: 9px;
 }
@@ -69,32 +70,46 @@ header .stats{
 }
 header .stat{
     background-color:#E5E5E5;
-    height: 52px;
-    width: 78px;
+    height: 5.2em;
+    width: 7.8em;
     justify-content: center;
     border-radius: 12px;
 }
 
+
+/* main gallery display */
 main{
-    margin: 40px 10px 0;
-    /* grid-template-rows: repeat(3,minmax(auto,109.32px)); */
+    width: 90%;
+    margin: 4em auto 0;
     grid-template-rows: repeat(3,1fr);
-    /* grid-template-columns: repeat(3,109.32px); */
     grid-template-columns: repeat(3,1fr);
-    /* row-gap: 0; */
     gap:10px ;
+    /* grid-template-rows: repeat(3,minmax(auto,109.32px)); */
+    /* grid-template-columns: repeat(3,109.32px); */
+    /* row-gap: 0; */
 }
 
 main .img{
     height: 100%;
     width: 100%;
     overflow: hidden;
-}
-main .img img{
-    height: max-content;
-    max-width: 100%;
     border-radius: 10px;
 }
+
+main .img img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(.5);
+    transition: all .3s ease-in-out;
+}
+
+main .img img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(0);
+}
+
+
 
 main div{
     grid-row: span 1;
@@ -113,11 +128,30 @@ main div:nth-child(4){
     grid-column: 3/4;
 }
 
+/* Footer */
 
+footer{
+    display: flex;
+    margin: 44px 0 24px;
+    place-content: center;
+    font-size: 14px;
+    color: #B9BDCF;
+}
 
+footer a{
+    margin: 0 2px;
+    font-weight: 700;
+    color: #B9BDCF;
+}
 
 
 
 @media screen and (min-width:960px) {
-    
+    body{
+        font-size: 16px;
+    }
+
+    main{
+        width: 63%;
+    }
 }
