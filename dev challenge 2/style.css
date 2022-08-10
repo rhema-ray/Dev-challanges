@@ -1,0 +1,52 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 1px dashed rgba(255, 68, 0, 0.542);
+}
+
+body{
+font-size: 10px;
+}
+
+nav, h1, p, a{
+    font-family: Montserrat;
+}
+
+/* main */
+
+nav{
+    font-size: 1.6em;
+    margin: 2em 2em 0;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* main .img{
+    height: auto;
+    width: 100%;
+} */
+
+main img{
+    height:auto;
+    width:286.83px;
+}
+
+section{
+margin-top: 10px;
+}
+
+section h1{
+    line-height: 71px;
+    font-size:4.8em;
+    font-weight: 600;
+
+    
+}
+
+
