@@ -1,11 +1,8 @@
-<head>
    <link rel="icon" type="image/png" sizes="32x32" href="dev challenge 1/assets/profile.jpg">
     <title>Rhema's Dev challenges</title>
-</head>   
 
 
-
- This is a repository filled with code challeges from the [Tech-Newbies Community]()
+ This is a repository filled with code challeges from the [Tech-Newbies Community]() test.
 
 
 ## My projects
